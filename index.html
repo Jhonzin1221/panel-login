@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="panel of login">
+    <link rel="shortcut icon" href="#" type="image/x-icon"> <!--Adicionar icon no lugar da #-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Login panel - Dev. jhonzin</title>
+</head>
+<body>
+    <!-- Caixa de login -->
+    <div class="login-box">
+        <form data-netlify="true" onsubmit="return checkLogin()">
+            <h1>Login</h1>
+            <input type="text" id="name" name="name" placeholder="Nome" required autocomplete="off">
+            <input type="password" id="password" name="password" placeholder="Senha" required autocomplete="off">
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <!-- Opções de conta e recuperação -->
+        <div class="opcoes">
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
+            <p>Esqueceu a senha? <a href="recupuser.html">Recuperar senha</a></p>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Dev. Jhonzin - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
+
+                        <!-- codigo feito a mão e comentarios feitos pelo chat gpt -->

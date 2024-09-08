@@ -1,0 +1,103 @@
+/* Importa a fonte "Poppins" do Google Fonts, com variações de peso e estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define que todo elemento da página terá margem e padding zerados e aplica o modelo de box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body{
+    font-family: "Poppins", sans-serif; /* Usa a fonte Poppins */
+    background-image: url(wallpaper.jpg); /* Define a imagem de fundo */
+}
+
+/* Estilo para o título <h1> */
+h1{
+    font-size: 40px; /* Define o tamanho da fonte */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    padding: 10px 0; /* Padding em cima e embaixo */
+}
+
+/* Estilo para o container do login */
+.login-box{
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    top: 50%; /* Centraliza verticalmente na tela */
+    left: 50%; /* Centraliza horizontalmente na tela */
+    transform: translate(-50%, -50%); /* Move o elemento para o centro exato */
+    width: 380px; /* Define a largura da caixa de login */
+    padding: 40px; /* Padding interno da caixa de login */
+    backdrop-filter: blur(15px); /* Aplica um efeito de desfoque no fundo da caixa */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Aplica uma sombra ao redor da caixa */
+}
+
+/* Estilo para todos os elementos <input> */
+input{
+    width: 100%; /* Ocupa 100% da largura do container */
+    padding: 10px; /* Define o padding interno */
+    margin-bottom: 20px; /* Espaço abaixo de cada campo de input */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda as bordas dos inputs */
+    box-shadow: 0 0 10px rgb(25, 0, 255); /* Aplica uma sombra azul ao redor dos inputs */
+    font-weight: 700; /* Torna o texto dentro do input mais negrito */
+}
+
+/*mudar cor do texto input*/
+input::placeholder{
+    color: #000;
+    }
+
+/* Estilo para o botão de login */
+button {
+    width: 100%; /* Ocupa 100% da largura do container */
+    padding: 10px; /* Padding interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda as bordas do botão */
+    background-color: #b600b6; /* Define a cor de fundo do botão (roxo) */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    font-weight: 700; /* Torna o texto do botão negrito */
+    font-size: 17px;
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+    transition: 0.3s; /* Suaviza a transição ao passar o mouse sobre o botão */
+}
+
+/* Muda a cor de fundo do botão ao passar o mouse */
+button:hover {
+    background-color: #6b006b; /* Fica com um tom de roxo mais escuro ao passar o mouse */
+}
+
+/* Estilo para a seção de opções adicionais (como links de esqueci a senha, etc.) */
+.opcoes{
+    font-size: 15px; /* Define o tamanho da fonte */
+    margin-top: 20px; /* Espaço acima da seção */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+    color: white; /* Cor do texto em branco */
+}
+
+/* Estilo para os links dentro da seção de opções */
+.opcoes a{
+    color: cyan; /* Define a cor do link como ciano */
+    text-decoration: none; /*retira a decoraçao do texto, neste caso o underline*/
+}
+
+/* Estilo para os parágrafos dentro da seção de opções */
+.opcoes p{
+    margin: 10px 0; /* Espaçamento vertical dos parágrafos */
+}
+
+footer{
+    background-color: transparent; /*o background do footer ficara transparente*/
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 10px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    position: fixed; /* Fixa o rodapé no topo da página */
+    bottom: 0; /* Posiciona o rodapé no topo da página */
+    width: 100%; /* Ocupa 100% da largura da página */
+}
+
+                    /* codigo feito a mão e comentarios feitos pelo chat gpt */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="panel of registration">
+    <link rel="shortcut icon" href="#" type="image/x-icon"> <!--Adicionar icon no lugar da #-->
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+    <title>Cadastro - Dev. Jhonzin</title>
+</head>
+<body>
+    <!-- Caixa de cadastro -->
+    <div class="register-box">
+        <form data-netlify="true" onsubmit="return checkRegistration()">
+            <h1>Cadastro</h1>
+            <input type="text" id="name" name="name" placeholder="Nome Completo" required autocomplete="off">
+            <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="off">
+            <input type="password" id="password" name="password" placeholder="Senha" required autocomplete="off">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Senha" required autocomplete="off">
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+        <!-- Opções de conta -->
+        <div class="opcoes">
+            <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+            <p>Esqueceu a senha? <a href="recupuser.html">Recuperar senha</a></p>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Dev. Jhonzin - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
